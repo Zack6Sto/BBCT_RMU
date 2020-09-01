@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rellayl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imv_pro_post"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_png" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imv_pro_post"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TV_NameFeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="บุญครอง สมถวิล"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 hrs"
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_PostStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rellayl"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Hallow Me You"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/rellayl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_PostStatus"
+            android:layout_marginTop="5dp">
+
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content">-->
+            <!--            -->
+            <!--            <ImageView-->
+            <!--                android:id="@+id/tv_like"-->
+            <!--                android:layout_width="15dp"-->
+            <!--                android:layout_height="15dp"-->
+            <!--                android:src="@drawable/ic_phone_black_24dp"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_line"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:text="20"-->
+            <!--                android:textColor="#000000"-->
+            <!--                android:textSize="13dp"/>-->
+
+            <!--        </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="6 comments"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgView_Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/rellayl2"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/imgView_Line2">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_chat_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="comment"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--        <RelativeLayout-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent">-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerInParent="true">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="18dp"-->
+            <!--                    android:layout_height="18dp"-->
+            <!--                    android:adjustViewBounds="true"-->
+            <!--                    android:scaleType="fitCenter"-->
+            <!--                    android:src="@drawable/ic_phone_black_24dp"/>-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="10dp"-->
+            <!--                    android:text="Like"-->
+            <!--                    android:textColor="#000000"-->
+            <!--                    android:textSize="13dp"/>-->
+
+
+            <!--            </LinearLayout>-->
+
+            <!--        </RelativeLayout>-->
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imgView_PostPic"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_PostStatus"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:visibility="gone"-->
+<!--        android:src="@drawable/pic_f"/>-->
+
+
+</androidx.cardview.widget.CardView>

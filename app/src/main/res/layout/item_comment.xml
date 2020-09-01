@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@android:color/holo_purple"
+    android:layout_height="110dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rellayl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imvProPic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_png" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imvProPic">
+
+            <TextView
+                android:id="@+id/TV_NameCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="บุญครอง สมถวิล"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/TV_TimeCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 hrs"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TV_DataComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="66dp"
+        android:text="Hallow Me You"
+        android:textColor="#000000"
+        android:textSize="14dp" />
+
+</androidx.cardview.widget.CardView>

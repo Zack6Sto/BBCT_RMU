@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="668dp">
+
+                <RelativeLayout
+                    android:id="@+id/rellayl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imvProPic_comment"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logo_png" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imvProPic_comment"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="บุญครอง สมถวิล"
+                            android:textColor="#000000"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12 hrs"
+                            android:textColor="#000000"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_PostStatusCM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rellayl"
+                    android:layout_marginLeft="30dp"
+                    android:text="Hallow Me You"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+
+                <ImageView
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/tv_PostStatusCM"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="590dp"
+                    android:layout_below="@+id/line1" />
+
+                <ImageView
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/recyclerViewComment"
+                    android:background="@color/colorPrimary" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EDT_Comment"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:hint="comment"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_SEND_Comment"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/send" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
